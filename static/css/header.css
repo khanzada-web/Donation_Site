@@ -1,0 +1,30 @@
+header{
+    height: 90px;
+    width: 1500px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+nav{
+    height: 80px;
+    width: 1500px;
+    background: linear-gradient(to bottom, #8B0000, #000000);
+    border-radius: 5px; 
+    display: flex;
+    position: fixed;
+    color: white;
+}
+
+#logo_div{
+    height: 80px;
+    width: 80px;
+    padding-left: 30px;
+    cursor: default;
+}
+#logo_name_span{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    font-family: 'Courier', 'Space Mono', monospace;
+    cursor: default;
+}

@@ -1,0 +1,47 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/Donate.css' %}">
+{% include "header.html" %}
+
+
+<form method="POST" action="{% url "Donate" %}">
+    {% csrf_token %}
+    {{Donation_info}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <h1> Display Data </h1>
+    <h1> {{First_name}} </h1>
+    <h1> {{last_name}} </h1>
+    <h1> {{email_Address}} </h1>
+    <h1> {{phone_Number}} </h1>
+    <h1> {{Purpose}} </h1>
+</form> 
+
+<div id='row' >
+    {% for n in Admin_Data %}
+    <div id="row_1_col_1">
+        <h1>{{n.Name}}</h1>
+        <h2>{{n.Reason}}</h2>
+        <h2>{{n.Descrption}}</h2>
+        <img id="ad_img" src="/media/{{n.img}}"/>
+
+    </div>
+    {% endfor %}
+    
+</div>
+<marquee>
+
+    hello world hello world
+
+</marquee>
+<form method="POST" action="{% url "Donate" %}">
+    {% csrf_token %}
+    <h1> Display Data </h1>
+    <h1> {{Name}} </h1>
+    <h1> {{Father_Name}} </h1>
+    <h1> {{Mother_Name}} </h1>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form> 
+
+
+{% include "footer.html" %}

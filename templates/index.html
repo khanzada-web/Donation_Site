@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+{% include "header.html" %}
+    <Section>
+        <div id="Hero_Section">
+            <div id="Hero_Section_part">
+                <div id="Hero_Section_part1" >
+                    <h1 id="Hero_Section_part1_text">{{quote}}</h1>
+                    <h1 id="Hero_Section_part1_text1">{{quote1}}</h1>
+                    <a href={% url "Donate" %}><button id="Donote_hero_button" >{{button_text}}</button></a>
+                   
+                </div>
+                <div id="Hero_Section_part2">
+                    <img id="Hero_Section_part2_image" src="{% static "images/hero.jpg" %}">
+                </div>
+            </div>
+        </div>
+        <div id="how_it_work_section">
+            <h1 id="how_it_work_section_heading">{{how_it_work_section}}</h1>
+            <div id="how_it_work_section_1">
+                <h1 id="how_it_work_section_1_h1">{{how_it_work_section1}}</h1>
+                <p1 id="how_it_work_section_1_p1">{{how_it_work_section1_1}}</p1>
+            </div>
+            <div id="how_it_work_section_2">
+                <h1 id="how_it_work_section_1_h2">{{how_it_work_section3}}</h1>
+                <p1 id="how_it_work_section_1_p2">{{how_it_work_section1_2}}</p1>
+
+            </div>
+            <div id="how_it_work_section_3">
+                <h1 id="how_it_work_section_1_h3">{{how_it_work_section2}}</h1>
+                <p1 id="how_it_work_section_1_p3">{{how_it_work_section1_3}}</p1>
+
+            </div>
+        </div>
+        <div id="program_Section">
+            <h1 id="program_section_heading">{{program}}</h1>
+            <div id="program_section_Div1">
+                <div id="program_section_Div1_1">
+                    <img src={% static "/images/edu.png" %} id="program_section_Div4_2_image">
+                </div>
+                <div id="program_section_Div1_2">
+                    <h1>{{Education}}</h1>
+                    <p>{{Education_p1}}</p>
+                </div>
+            </div>
+            <div id="program_section_Div2">
+                <div id="program_section_Div2_1">
+                    <h1>{{BasicNeeds}}</h1>
+                    <p>{{BasicNeeds_p1}}</p>
+                </div>
+                <div id="program_section_Div2_2">
+                    <img src={% static "/images/2.png" %} id="program_section_Div4_2_image">
+                </div>
+            </div>
+            <div id="program_section_Div3">
+                <div id="program_section_Div3_1">
+                    <img src={% static "/images/3.png" %} id="program_section_Div4_2_image">
+                </div>
+                <div id="program_section_Div3_2">
+                    <h1>{{HealthWellness}}</h1>
+                    <p>{{HealthWellness_p1}}</p>
+                </div>
+            </div>
+            <div id="program_section_Div4">
+                <div id="program_section_Div4_1">
+                    <h1>{{CommunityDevelopment}}</h1>
+                    <p>{{CommunityDevelopment_p1}}</p>
+                </div>
+                <div id="program_section_Div4_2">
+                    <img src={% static "/images/4.png" %} id="program_section_Div4_2_image">
+                </div>
+            </div>
+                
+            
+        </div>
+        <div id="Testimonials">
+            <h1 id="Testimonials_section_heading">{{Testimonials}}</h1>
+            <blockquote id="Testimonials_section_heading1">
+                {{Tom}}
+            </blockquote >
+            <div id="Testimonials_section_heading1_auther">— [ Tom ]</div>
+            <blockquote id="Testimonials_section_heading2">
+                {{Jerry}}
+            </blockquote >
+            <div id="Testimonials_section_heading1_auther">— [ Jerry ]</div>
+        </div>
+        <div id="Involves_Section">
+            <h1 id="Involves_Section_heading">{{Get_Involved}}</h1>
+            <div id="Inolves_Section_section_1">
+                <h1 id="Involves_Section_1_h1">{{Volunteer}}</h1>
+                <p1 id="Involves_Section_1_p1">{{Volunteer_p}}</p1>
+            </div>
+            <div id="Involves_Section_section_2">
+                <h1 id="Involves_Section_2_h1">{{Spread_the_Word}}</h1>
+                <p1 id="Involves_Section_2_p1">{{Spread_the_Word_p}}</p1>
+            </div>
+            <div id="Involves_Section_section_3">
+                <h1 id="Involves_Section_3_h1">{{Follow_Us_on_SocialMedia}}</h1>
+                <p1 id="Involves_Section_3_p1">{{Follow_Us_on_SocialMedia_p}}</p1>
+
+            </div>
+        </div>
+        <div id="Hero_Section_last">
+            <div id="Hero_Section_part_last">
+                <div id="Hero_Section_part1_last" >
+                    <h1 id="Hero_Section_part1_text_last">{{quote}}</h1>
+                    <h1 id="Hero_Section_part1_text1_last">{{quote1}}</h1>
+                    <h1 id="Hero_Section_part1_text2_last">{{quote2}}</h1>
+                    <a href={% url "Donate" %}><button id="Donote_hero_button_last" >{{button_text}}</button></a>
+                   
+                </div>
+                <div id="Hero_Section_part2_last">
+                    <img id="Hero_Section_part2_image_last" src="{% static "images/last.jfif" %}">
+                </div>
+            </div>
+        </div> 
+    </Section>
+{% include "footer.html" %}
+</body>
+</html>
